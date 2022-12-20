@@ -1,0 +1,95 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/Inter\ Web/inter.css);
+
+/*page*/
+.page {
+    background-color: #2A2C2F;
+    margin: 0 auto;
+    min-width: 1280px;
+}
+.header {
+    padding: 28px 48px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header__logo {
+    width: 176px;
+    height: 52px;
+}
+
+.header__lang-link {
+    width: 30px;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+    text-decoration-line: none;
+    color: #FFFFFF;
+}
+
+.header__lang-link:first-child {
+    margin-right: 18px;
+}
+
+/*Lead*/
+.lead {
+    width: 984px;
+    height: 1005px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.lead__title {
+    margin: 0;
+    padding: 56px 0 32px;
+    height: 200px;
+    width: 720px;
+    font-family: Inter;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 100px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.lead__subtitle {
+    padding-bottom: 64px;
+    margin: 0;
+    width: 640px;
+    height: 72px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.lead__image {
+    width: 984px;
+    height: 615px;
+}
+
+.lead__caption {
+    margin: 0;
+    padding-top: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    align-self: flex-start;
+}
