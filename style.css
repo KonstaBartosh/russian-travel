@@ -1,239 +1,40 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/Inter\ Web/inter.css);
 
-/*page*/
+/* page*/
+@import url(./blocks/page/paige.css);
 
-.page {
-    margin: 0 auto;
-    min-width: 1280px;
-    background-color: #2A2C2F;
-}
-.header {
-    padding: 28px 48px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.header__logo {
-    width: 176px;
-    height: 52px;
-}
+/* header */
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__lang-link/header__lang-link.css);
 
-.header__lang-link {
-    width: 30px;
-    height: 28px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: right;
-    text-decoration-line: none;
-    color: #FFFFFF;
-}
-
-.header__lang-link:first-child {
-    margin-right: 18px;
-}
-
-/*Lead*/
-.lead {
-    padding-top: 56px;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.lead__title {
-    margin: 0;
-    padding: 0 0 32px;
-    height: 200px;
-    width: 720px;
-    font-family: Inter;
-    font-size: 96px;
-    font-weight: 900;
-    line-height: 100px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.lead__subtitle {
-    padding-bottom: 64px;
-    margin: 0;
-    width: 640px;
-    height: 72px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.lead__image {
-    width: 100%;
-}
-
-.lead__caption {
-    margin: 0;
-    padding-top: 8px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 14px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    align-self: flex-start;
-}
+/* lead */
+@import url(./blocks/lead/lead.css);
+@import url(./blocks/lead/__title/lead__title.css);
+@import url(./blocks/lead/__subtitle/lead__subtitle.css);
+@import url(./blocks/lead/__image/lead__image.css);
+@import url(./blocks/lead/__caption/lead__caption.css);
 
 /* intro */
+@import url(./blocks/intro/intro.css);
+@import url(./blocks/intro/__title/intro__title.css);
+@import url(./blocks/intro/__text/intro__text.css);
+@import url(./blocks/intro/__list/intro__list.css);
 
-.intro {
-    padding-top: 92px;
-    width: 75%;
-    /* height: 429px; */
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-.intro__title {
-    width: 690px;
-    margin: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 54px;
-    line-height: 58px;
-    color: #FFFFFF;
-}
-
-.intro__text {
-    width: 690px;
-    margin: 0;
-    padding: 40px 0 33px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 163%;
-    color: #FFFFFF;
-}
-
-.intro__list {
-    width: 690px;
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 18px;
-    color: #FFFFFF;
-    list-style: none;
-}
-
-/* gellery */
-
-.photo-grid {
-    margin: 0 auto;
-    padding-top: 92px;
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 16px;
-}
-
-.photo-grid__item {
-    min-width: 284px;
-    height: 213px;
-}
+/* photo-grid */
+@import url(./blocks/photo-grid/photo-grid.css);
+@import url(./blocks/photo-grid/__item/photo-grid__item.css);
 
 /* places */
+@import url(./blocks/places/places.css);
 
-.places {
-    margin: 0 auto;
-    padding-top: 92px;
-    width: 80%;
-}
-
-.place {
-    display: grid;
-    grid-template-rows: min-content min-content 484px;
-    grid-template-columns: 460px 484px;
-    grid-template-areas: 
-    'title website'
-    'image paragraph1'
-    'image paragraph2';
-    /* column-gap: 40px; */
-}
-
-.place__title {
-    margin: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 76px;
-    color: #FFFFFF;
-    grid-area: title;
-    padding-bottom: 48px;
-}
-
-.place__image {
-    width: 100%;
-    grid-area: image;
-}
-
-.place__website {
-    grid-area: website;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 48px;
-}
-.place__url-heading {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-    letter-spacing: 2px;
-    color: #AAAAAA;
-}
-
-.place__link {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    text-decoration-line: underline;
-    color: #FFFFFF;
-}
-
-.place__paragraph {
-    margin: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 163%;
-    color: #FFFFFF;
-    grid-area: paragraph1;
-}
-
-.place__paragraph:last-child {
-    grid-area: paragraph2;
-    padding-top: 26px;
-}
+/* place */
+@import url(./blocks/place/place.css);
+@import url(./blocks/place/__image/place__image.css);
+@import url(./blocks/place/__link/place__link.css);
+@import url(./blocks/place/__paragraph/place__paragraph.css);
+@import url(./blocks/place/__text/place__text.css);
+@import url(./blocks/place/__title/place__title.css);
+@import url(./blocks/place/__url-heading/place__url-heading.css);
+@import url(./blocks/place/__website/place__website.css);
