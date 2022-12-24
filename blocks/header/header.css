@@ -19,17 +19,3 @@
         background-color:bisque;
     }
 }
-
-/* @media screen and (max-width: 768px) {
-    .header {
-        padding: 28px 24px 0;
-        background-color: aqua;
-    }
-}
-
-@media all and (max-width: 320px) {
-    .header {
-        padding: 16px 16px 0;
-        background-color:bisque;
-    }
-} */
