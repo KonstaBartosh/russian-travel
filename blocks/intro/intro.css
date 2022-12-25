@@ -6,16 +6,22 @@
     margin: 0 auto;
 }
 
+@media (max-width: 1279px) {
+    .intro {
+        max-width: 928px;
+    } 
+}
+
 @media (max-width: 1023px) {
     .intro {
-        max-width: 720px;
-        padding-top: 88px;
+        max-width: 928px;
+        padding: 88px 24px 0;
     } 
-};
+}
 
 @media (max-width: 767px) {
     .intro {
-        max-width: 288px;
-        padding-top: 64px;
+        min-width: 288px;
+        padding: 64px 16px 0;
     }  
-};
+}
