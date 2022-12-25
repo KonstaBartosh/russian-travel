@@ -16,7 +16,6 @@
         width: 352px;
         height: 264px;
     }
-    
 }
 
 @media screen and (max-width: 767px) {
@@ -24,5 +23,4 @@
         width: 288px;
         height: 216px;
     }
-    
 }
