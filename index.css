@@ -1,5 +1,5 @@
 @import url(./vendor/normalize.css);
-@import url(./vendor/Inter\ Web/inter.css);
+@import url(./vendor/fonts/Inter\ Web/inter.css);
 
 /* page*/
 @import url(./blocks/page/paige.css);
