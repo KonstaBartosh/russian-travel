@@ -1,4 +1,5 @@
 .footer {
+    /* font-family: 'Inter', Arial, sans-serif; */
     margin: 0 auto;
     padding-top: 92px;
     padding-bottom: 24px;
@@ -22,7 +23,7 @@
 @media screen and (max-width: 740px) {
     .footer {
         margin: 0;
-        padding: 64px 16px auto 24px;
+        padding: 64px 16px 24px;
         flex-direction: column;
         gap: 32px;
     }

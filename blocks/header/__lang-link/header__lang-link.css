@@ -1,7 +1,4 @@
 .header__lang-link {
-    width: 30px;
-    height: 28px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -11,8 +8,7 @@
     color: #FFFFFF;
 }
 
-.header__lang-link:first-child {
-    margin-right: 18px;
+.header__lang-link_active {
     text-decoration: underline;
 }
 
