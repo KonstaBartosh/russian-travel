@@ -6,6 +6,7 @@
     max-width: 1184px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 @media screen and (max-width: 1279px) {
@@ -26,5 +27,6 @@
         padding: 64px 16px 24px;
         flex-direction: column;
         gap: 32px;
+        align-items: flex-start;
     }
 }
